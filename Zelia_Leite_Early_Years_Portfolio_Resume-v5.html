@@ -1,0 +1,2406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="description" content="Zélia Leite — Educadora Bilíngue de Educação Infantil com 8+ anos de experiência docente, Cambridge C2, CELTA, Pedagogia e Pós-graduação em Educação Bilíngue." />
+  <title data-i18n="pageTitle">Zélia Leite — Educadora Bilíngue de Educação Infantil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --midnight: #0C6170;
+      --midnight-deep: #07434E;
+      --blue-green: #37BEB0;
+      --tiffany: #A4E5E0;
+      --baby-blue: #DBF5F0;
+      --warm-paper: #FAFDFC;
+      --ink: #172A2E;
+      --muted: #3F575D;
+      --card-bg: #FFFFFF;
+      --border: #B8DDD6;
+      --berry: #0A5C73;
+      --whatsapp: #0E7A6E;
+      --whatsapp-hover: #095C53;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--warm-paper);
+      color: var(--ink);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .brand-serif {
+      font-family: 'Fraunces', Georgia, serif;
+      letter-spacing: -0.015em;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--blue-green);
+      outline-offset: 2px;
+      border-radius: 6px;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .anim-fade-up {
+      animation: fadeUp 0.5s ease-out both;
+    }
+
+    /* Sticky Top Nav */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250, 253, 252, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: var(--midnight-deep);
+      font-weight: 700;
+      font-size: 1.02rem;
+    }
+
+    .brand-dot {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue-green), var(--midnight));
+      box-shadow: 0 0 0 4px var(--baby-blue);
+      flex-shrink: 0;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 600;
+      padding: 0.42rem 0.72rem;
+      border-radius: 999px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background: var(--baby-blue);
+      color: var(--midnight-deep);
+    }
+
+    .nav-cta {
+      background: var(--midnight) !important;
+      color: #FFFFFF !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--midnight-deep) !important;
+    }
+
+    .btn-pdf {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: #FFFFFF;
+      color: var(--midnight-deep);
+      border: 1.5px solid var(--midnight);
+      font-family: inherit;
+      font-size: 0.84rem;
+      font-weight: 700;
+      padding: 0.4rem 0.78rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn-pdf:hover {
+      background: var(--baby-blue);
+    }
+
+    /* Segmented PT | EN Toggle */
+    .lang-toggle {
+      display: inline-flex;
+      align-items: center;
+      background: var(--baby-blue);
+      border: 1.5px solid var(--border);
+      border-radius: 999px;
+      padding: 2px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: var(--midnight-deep);
+      font-family: inherit;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.3rem 0.65rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--midnight-deep);
+      color: #FFFFFF;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, var(--midnight-deep) 0%, var(--midnight) 60%, #107788 100%);
+      color: #FFFFFF;
+      padding: 3.6rem 1.25rem 4.2rem;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(55, 190, 176, 0.24), transparent 70%);
+      top: -120px;
+      right: -90px;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.45fr 0.95fr;
+      gap: 2.2rem;
+      align-items: center;
+    }
+
+    .eyebrow-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(219, 245, 240, 0.16);
+      border: 1px solid rgba(164, 229, 224, 0.45);
+      color: var(--baby-blue);
+      padding: 0.32rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 4vw, 3.15rem);
+      line-height: 1.12;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.08rem;
+      color: var(--tiffany);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .hero-summary {
+      font-size: 0.98rem;
+      color: rgba(255, 255, 255, 0.95);
+      text-align: left;
+      margin-bottom: 1.6rem;
+      max-width: 640px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--blue-green);
+      color: var(--midnight-deep);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.3rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--tiffany);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: #FFFFFF;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Static Snapshot Card */
+    .snapshot-card {
+      background: #FFFFFF;
+      color: var(--ink);
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 20px 40px rgba(4, 34, 40, 0.25);
+      border: 2px solid var(--tiffany);
+    }
+
+    .snapshot-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .snapshot-header span {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--midnight-deep);
+    }
+
+    .badge-c2 {
+      background: var(--baby-blue);
+      color: var(--midnight-deep);
+      padding: 0.24rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      border: 1px solid var(--midnight);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .stat-box {
+      background: var(--baby-blue);
+      border-radius: 14px;
+      padding: 0.85rem;
+      border-left: 4px solid var(--midnight);
+    }
+
+    .stat-num {
+      font-family: 'Fraunces', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--midnight-deep);
+      line-height: 1.15;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--ink);
+      font-weight: 600;
+      margin-top: 0.2rem;
+    }
+
+    .contact-mini {
+      font-size: 0.84rem;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .contact-mini a {
+      color: var(--midnight-deep);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4.2rem;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    .section-head {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--midnight-deep);
+      background: var(--baby-blue);
+      border: 1px solid var(--border);
+      padding: 0.26rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.6rem, 2.7vw, 2.15rem);
+      color: var(--midnight-deep);
+      margin-bottom: 0.3rem;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      max-width: 740px;
+      font-size: 0.95rem;
+    }
+
+    /* Visual Classroom Strip */
+    .visual-banner {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.1rem 1.35rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .visual-banner-text {
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .visual-banner-text strong {
+      display: block;
+      color: var(--midnight-deep);
+      font-size: 0.96rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .visual-banner-text span {
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    /* Mini Timeline Bar */
+    .mini-timeline-wrap {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .mini-timeline-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+
+    .mini-timeline-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--midnight-deep);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .controls-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-ghost {
+      background: var(--baby-blue);
+      color: var(--midnight-deep);
+      border: 1px solid var(--midnight);
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-ghost:hover {
+      background: var(--tiffany);
+    }
+
+    .timeline-bar {
+      display: flex;
+      gap: 0.45rem;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    .timeline-seg {
+      flex: 1;
+      min-width: 130px;
+      background: var(--warm-paper);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 0.55rem 0.7rem;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      color: var(--ink);
+      transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .timeline-seg:hover,
+    .timeline-seg:focus-visible {
+      border-color: var(--midnight-deep);
+      background: var(--baby-blue);
+      transform: translateY(-1px);
+    }
+
+    .timeline-seg .seg-years {
+      display: block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--berry);
+    }
+
+    .timeline-seg .seg-name {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--midnight-deep);
+    }
+
+    /* Experience Timeline Layout */
+    .exp-timeline {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+
+    @media (min-width: 860px) {
+      .exp-timeline::before {
+        content: "";
+        position: absolute;
+        left: 196px;
+        top: 12px;
+        bottom: 12px;
+        width: 3px;
+        background: var(--border);
+        border-radius: 999px;
+      }
+    }
+
+    .exp-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.4rem;
+    }
+
+    @media (min-width: 860px) {
+      .exp-row {
+        grid-template-columns: 180px 36px 1fr;
+        gap: 0;
+        align-items: start;
+      }
+    }
+
+    .exp-left {
+      padding-top: 0.2rem;
+    }
+
+    .exp-period-text {
+      display: inline-block;
+      background: var(--baby-blue);
+      color: var(--midnight-deep);
+      border: 1px solid var(--midnight);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.22rem 0.65rem;
+      border-radius: 999px;
+      margin-bottom: 0.35rem;
+    }
+
+    .exp-org-text {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--berry);
+      line-height: 1.35;
+    }
+
+    .exp-node-col {
+      display: none;
+    }
+
+    @media (min-width: 860px) {
+      .exp-node-col {
+        display: flex;
+        justify-content: center;
+        padding-top: 1.15rem;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .exp-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--blue-green);
+      border: 3px solid var(--midnight-deep);
+    }
+
+    .exp-dot.featured {
+      width: 17px;
+      height: 17px;
+      background: var(--midnight-deep);
+      border: 3px solid var(--blue-green);
+    }
+
+    /* Details / Summary Card */
+    details.exp-details {
+      background: var(--card-bg);
+      border: 1.5px solid var(--border);
+      border-left: 5px solid var(--midnight);
+      border-radius: 16px;
+      padding: 1.15rem 1.35rem;
+      box-shadow: 0 4px 14px rgba(12, 97, 112, 0.04);
+    }
+
+    details.exp-details[open] {
+      border-color: var(--midnight);
+    }
+
+    summary.exp-summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    summary.exp-summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .summary-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .exp-role-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.14rem;
+      color: var(--midnight-deep);
+      line-height: 1.3;
+    }
+
+    .toggle-hint {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--midnight-deep);
+      background: var(--baby-blue);
+      padding: 0.22rem 0.6rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .exp-headline {
+      font-size: 0.92rem;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .context-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.15rem;
+    }
+
+    .chip {
+      background: var(--baby-blue);
+      color: var(--midnight-deep);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.18rem 0.55rem;
+      border-radius: 6px;
+    }
+
+    .exp-body {
+      margin-top: 0.9rem;
+      padding-top: 0.85rem;
+      border-top: 1px dashed var(--border);
+    }
+
+    .theme-group {
+      margin-bottom: 0.75rem;
+    }
+
+    .theme-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .theme-label {
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--berry);
+      margin-bottom: 0.3rem;
+    }
+
+    .exp-bullets {
+      padding-left: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.38rem;
+      font-size: 0.91rem;
+      color: var(--ink);
+    }
+
+    .earlier-role-block {
+      margin-bottom: 0.85rem;
+    }
+
+    .earlier-role-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .earlier-role-head {
+      font-weight: 700;
+      color: var(--midnight-deep);
+      font-size: 0.93rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .earlier-role-period {
+      font-weight: 600;
+      color: var(--berry);
+      font-size: 0.84rem;
+    }
+
+    /* Competencies Grid */
+    .comp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .comp-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--midnight);
+      border-radius: 16px;
+      padding: 1.25rem;
+    }
+
+    .comp-card h3 {
+      font-size: 1.06rem;
+      color: var(--midnight-deep);
+      margin-bottom: 0.65rem;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.38rem;
+    }
+
+    .tag {
+      background: var(--baby-blue);
+      border: 1px solid var(--border);
+      color: var(--midnight-deep);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.25rem 0.58rem;
+      border-radius: 8px;
+    }
+
+    /* Education & Credentials */
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.3rem;
+    }
+
+    .info-panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.45rem;
+    }
+
+    .info-panel h3 {
+      font-size: 1.2rem;
+      color: var(--midnight-deep);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 2px solid var(--baby-blue);
+    }
+
+    .edu-item {
+      padding-bottom: 0.8rem;
+      margin-bottom: 0.8rem;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .edu-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      color: var(--midnight-deep);
+      font-size: 0.94rem;
+    }
+
+    .edu-school {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .edu-note {
+      font-size: 0.82rem;
+      color: var(--berry);
+      font-weight: 600;
+      margin-top: 0.15rem;
+    }
+
+    .cred-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      font-size: 0.9rem;
+      color: var(--ink);
+    }
+
+    .cred-badge {
+      display: inline-block;
+      background: var(--baby-blue);
+      color: var(--midnight-deep);
+      border: 1px solid var(--border);
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 0.18rem 0.52rem;
+      border-radius: 6px;
+      margin-right: 0.35rem;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background: linear-gradient(135deg, var(--baby-blue) 0%, #EEF9F7 100%);
+      border: 1.5px solid var(--midnight);
+      border-radius: 24px;
+      padding: 2rem;
+      margin-bottom: 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 1.8rem;
+      align-items: start;
+    }
+
+    .contact-copy h2 {
+      font-size: clamp(1.55rem, 2.5vw, 2rem);
+      color: var(--midnight-deep);
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-copy p {
+      font-size: 0.94rem;
+      color: var(--ink);
+      margin-bottom: 1.15rem;
+    }
+
+    .quick-channels {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: var(--whatsapp);
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 0.92rem;
+      padding: 0.82rem 1.25rem;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-whatsapp:hover {
+      background: var(--whatsapp-hover);
+      transform: translateY(-2px);
+    }
+
+    .direct-meta {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.9rem 1.05rem;
+      font-size: 0.85rem;
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .direct-meta a {
+      color: var(--midnight-deep);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .phone-placeholder {
+      color: var(--muted);
+      cursor: pointer;
+      text-decoration: underline dotted;
+    }
+
+    .btn-reveal-phone {
+      background: var(--baby-blue);
+      color: var(--midnight-deep);
+      border: 1px solid var(--midnight);
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 7px;
+      cursor: pointer;
+      margin-left: 0.35rem;
+    }
+
+    .btn-reveal-phone:hover {
+      background: var(--tiffany);
+    }
+
+    .contact-form-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.5rem;
+    }
+
+    .contact-form-card h3 {
+      font-size: 1.14rem;
+      color: var(--midnight-deep);
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-form-card .form-sub {
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.28rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .form-group label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--midnight-deep);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.6rem 0.78rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      color: var(--ink);
+      background: var(--warm-paper);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--midnight-deep);
+      background: #FFFFFF;
+    }
+
+    .form-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.3rem;
+    }
+
+    .btn-submit {
+      flex: 1;
+      min-width: 165px;
+      background: var(--midnight-deep);
+      color: #FFFFFF;
+      border: none;
+      padding: 0.78rem 1.15rem;
+      border-radius: 10px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+
+    .btn-submit:hover {
+      background: var(--midnight);
+    }
+
+    .btn-submit-wa {
+      flex: 1;
+      min-width: 165px;
+      background: var(--baby-blue);
+      color: var(--midnight-deep);
+      border: 1.5px solid var(--midnight);
+      padding: 0.78rem 1.15rem;
+      border-radius: 10px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+
+    .btn-submit-wa:hover {
+      background: var(--tiffany);
+    }
+
+    .form-status {
+      margin-top: 0.65rem;
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--midnight-deep);
+      display: none;
+    }
+
+    /* Floating WhatsApp Button */
+    .wa-float {
+      position: fixed;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      z-index: 95;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--whatsapp);
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.86rem;
+      padding: 0.72rem 1.1rem;
+      border-radius: 999px;
+      box-shadow: 0 8px 20px rgba(14, 122, 110, 0.3);
+    }
+
+    .wa-float:hover {
+      background: var(--whatsapp-hover);
+    }
+
+    @media (max-width: 859px) {
+      .hero-inner,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      .anim-fade-up {
+        animation: none !important;
+      }
+      * {
+        transition: none !important;
+      }
+    }
+
+    /* Print Stylesheet: clean 2-page PDF via window.print() */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 11mm 13mm;
+      }
+
+      nav,
+      .hero-actions,
+      .mini-timeline-wrap,
+      .visual-banner,
+      .contact-section,
+      .wa-float,
+      .toggle-hint,
+      .btn-reveal-phone {
+        display: none !important;
+      }
+
+      body {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        font-size: 9pt;
+        line-height: 1.35;
+      }
+
+      .hero {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        padding: 0 0 7pt 0 !important;
+        border-bottom: 1.5pt solid #000000;
+      }
+
+      .hero h1,
+      .hero-subtitle,
+      .hero-summary,
+      .eyebrow-pill,
+      .snapshot-card,
+      .stat-box,
+      .stat-num,
+      .stat-label,
+      .comp-card,
+      .tag,
+      .info-panel,
+      .edu-degree,
+      .edu-school,
+      .edu-note,
+      .cred-badge {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        border-color: #333333 !important;
+        box-shadow: none !important;
+      }
+
+      .hero-inner {
+        display: block !important;
+      }
+
+      .snapshot-card {
+        margin-top: 7pt;
+        padding: 7pt !important;
+        border: 1pt solid #000000 !important;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 5pt !important;
+        margin-bottom: 5pt !important;
+      }
+
+      main {
+        padding: 7pt 0 0 0 !important;
+      }
+
+      section {
+        margin-bottom: 10pt !important;
+      }
+
+      .exp-timeline::before,
+      .exp-node-col {
+        display: none !important;
+      }
+
+      .exp-row {
+        display: block !important;
+        margin-bottom: 7pt !important;
+      }
+
+      details.exp-details {
+        border: 1pt solid #666666 !important;
+        border-left: 3pt solid #000000 !important;
+        padding: 6pt 8pt !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+      }
+
+      .exp-body {
+        display: block !important;
+        margin-top: 4pt !important;
+        padding-top: 4pt !important;
+      }
+
+      .comp-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 7pt !important;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 7pt !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav aria-label="Navegação principal">
+    <div class="nav-inner">
+      <a href="#top" class="brand-mark">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Zélia Leite</span>
+      </a>
+
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#experience" data-i18n="navExperience">Experiência</a>
+          <a href="#competencies" data-i18n="navCompetencies">Competências</a>
+          <a href="#credentials" data-i18n="navCredentials">Formação e Certificações</a>
+          <a href="#contact" class="nav-cta" data-i18n="navContact">Contato</a>
+        </div>
+
+        <button type="button" class="btn-pdf" id="downloadPdfBtn" data-i18n="downloadPdf">
+          Baixar PDF
+        </button>
+
+        <div class="lang-toggle" role="group" aria-label="Seletor de idioma">
+          <button type="button" class="lang-btn active" id="btnPt" data-lang="pt">PT</button>
+          <button type="button" class="lang-btn" id="btnEn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero-inner anim-fade-up">
+      <div>
+        <div class="eyebrow-pill" data-i18n="eyebrow">Educação Infantil &bull; Educação Bilíngue &bull; Pedagogia</div>
+        <h1>Zélia Leite</h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">Educadora Bilíngue – Educação Infantil &bull; Pedagoga e Especialista em Educação Bilíngue</p>
+        <p class="hero-summary" data-i18n="heroSummary">
+          Educadora Bilíngue de Educação Infantil (Cambridge C2, CELTA) com Licenciatura em Pedagogia, Pós-graduação em Educação Bilíngue e Plurilíngue e 8 anos de experiência docente, incluindo 3 anos como Professora Regente de Inglês na Educação Infantil bilíngue. Experiência em planejamento lúdico e investigativo (CLIL e PBL), observação sistemática e documentação pedagógica (Portfólio, Diário de Classe e relatórios de desenvolvimento), orientação de auxiliares de turma (TAs), comunicação com famílias e estratégias inclusivas.
+        </p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn-primary" data-i18n="heroCtaPrimary">Ver Experiência</a>
+          <a href="#contact" class="btn-secondary" data-i18n="heroCtaSecondary">Entrar em Contato</a>
+        </div>
+      </div>
+
+      <aside class="snapshot-card" aria-label="Resumo do Perfil">
+        <div class="snapshot-header">
+          <span data-i18n="snapshotTitle">Resumo do Perfil</span>
+          <span class="badge-c2">Cambridge C2 &bull; CELTA</span>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-num" data-i18n="stat1Num">8+ anos</div>
+            <div class="stat-label" data-i18n="stat1Label">Experiência docente (desde 2018)</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num" data-i18n="stat2Num">3 anos</div>
+            <div class="stat-label" data-i18n="stat2Label">Regente de Inglês na Educação Infantil bilíngue</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num" data-i18n="stat3Num">3–6 anos</div>
+            <div class="stat-label" data-i18n="stat3Label">Faixa etária principal (também turmas de 2 anos)</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num" data-i18n="stat4Num">PT &middot; EN C2</div>
+            <div class="stat-label" data-i18n="stat4Label">Português nativo e Inglês Cambridge C2</div>
+          </div>
+        </div>
+        <div class="contact-mini">
+          <div><strong data-i18n="locLabel">Localização:</strong> <span data-i18n="locValue">São Paulo, SP, Brasil</span></div>
+          <div><strong>E-mail:</strong> <a href="mailto:zelia.mlbleite@gmail.com">zelia.mlbleite@gmail.com</a></div>
+          <div><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/zleite" target="_blank" rel="noopener">linkedin.com/in/zleite</a></div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. EXPERIÊNCIA -->
+    <section id="experience">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="expTag">Experiência Profissional</span>
+        <h2 data-i18n="expTitle">Trajetória em Sala de Aula e Prática Pedagógica</h2>
+        <p data-i18n="expSubtitle">Oito anos de experiência docente em escolas bilíngues, internacionais, contraturno e cursos de idiomas.</p>
+      </div>
+
+      <div class="visual-banner" aria-hidden="true">
+        <svg width="74" height="52" viewBox="0 0 74 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="4" width="70" height="44" rx="10" fill="#DBF5F0" stroke="#0C6170" stroke-width="2"/>
+          <circle cx="19" cy="26" r="8" fill="#37BEB0"/>
+          <rect x="33" y="15" width="31" height="5" rx="2.5" fill="#0C6170"/>
+          <rect x="33" y="24" width="24" height="5" rx="2.5" fill="#0A5C73"/>
+          <rect x="33" y="33" width="28" height="5" rx="2.5" fill="#A4E5E0"/>
+        </svg>
+        <div class="visual-banner-text">
+          <strong data-i18n="visualTitle">Fluxo de Rotina e Documentação na Educação Infantil</strong>
+          <span data-i18n="visualDesc">Planejamento semanal &rarr; Brincadeira e investigação com TAs &rarr; Observação sistemática, portfólios e parceria com famílias.</span>
+        </div>
+      </div>
+
+      <!-- Barra de Linha do Tempo (2018 -> Presente) -->
+      <div class="mini-timeline-wrap" id="miniTimelineWrap" style="display: none;">
+        <div class="mini-timeline-header">
+          <span class="mini-timeline-label" data-i18n="timelineBarLabel">Linha do tempo (2018 &rarr; Presente)</span>
+          <div class="controls-row">
+            <button type="button" class="btn-ghost" id="toggleAllBtn" data-i18n="expandAll">Expandir tudo</button>
+          </div>
+        </div>
+        <div class="timeline-bar" id="timelineBar"></div>
+      </div>
+
+      <div class="exp-timeline">
+        <!-- Graded -->
+        <div class="exp-row" id="exp-graded">
+          <div class="exp-left">
+            <div class="exp-period-text" data-i18n="gradedPeriod">Jan 2025 – Presente</div>
+            <div class="exp-org-text">Graded – The American School of São Paulo</div>
+          </div>
+          <div class="exp-node-col"><span class="exp-dot" aria-hidden="true"></span></div>
+          <details class="exp-details" data-exp-id="graded">
+            <summary class="exp-summary">
+              <div class="summary-top">
+                <h3 class="exp-role-title" data-i18n="gradedRole">Professora Substituta – Educação Infantil e Ensino Fundamental</h3>
+                <span class="toggle-hint" data-i18n="showDetails">Ver detalhes</span>
+              </div>
+              <p class="exp-headline" data-i18n="gradedHeadline">
+                Atuação em turmas de Educação Infantil e Pré-escola em ambiente escolar internacional totalmente em inglês.
+              </p>
+              <div class="context-chips">
+                <span class="chip" data-i18n="chipSub">Substituta</span>
+                <span class="chip" data-i18n="chipEarlyPreK">Educação Infantil e Pré-escola</span>
+                <span class="chip">Montessori</span>
+                <span class="chip">IB</span>
+              </div>
+            </summary>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li data-i18n="gradedB1"><strong>Protocolos e diretrizes:</strong> Cobertura de turmas de Educação Infantil e Pré-escola em ambiente totalmente em inglês, seguindo rigorosamente os protocolos de segurança da escola e as diretrizes pedagógicas inspiradas no IB e Montessori.</li>
+                <li data-i18n="gradedB2"><strong>Observação e adaptação:</strong> Acompanhamento dinâmico do desenvolvimento infantil, promovendo um ambiente seguro e adaptando-se rapidamente a diferentes rotinas e perfis individuais dos alunos.</li>
+                <li data-i18n="gradedB3"><strong>Comunicação com a equipe:</strong> Comunicação clara e profissional com os professores titulares e a coordenação para manter a consistência no acompanhamento comportamental.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <!-- Colégio CBV (Aberto por padrão) -->
+        <div class="exp-row" id="exp-cbv">
+          <div class="exp-left">
+            <div class="exp-period-text" data-i18n="cbvPeriod">Jul 2021 – Ago 2024</div>
+            <div class="exp-org-text">Colégio CBV (Rede Eleva / Salta)</div>
+          </div>
+          <div class="exp-node-col"><span class="exp-dot featured" aria-hidden="true"></span></div>
+          <details class="exp-details" open data-exp-id="cbv">
+            <summary class="exp-summary">
+              <div class="summary-top">
+                <h3 class="exp-role-title" data-i18n="cbvRole">Professora Bilíngue (Regente de Inglês)</h3>
+                <span class="toggle-hint" data-i18n="hideDetails">Ocultar detalhes</span>
+              </div>
+              <p class="exp-headline" data-i18n="cbvHeadline">
+                Regência do componente de inglês por 3 anos em programa bilíngue português–inglês da Educação Infantil (3 a 6 anos, incluindo alunos ingressantes antes dos 3 anos).
+              </p>
+              <div class="context-chips">
+                <span class="chip" data-i18n="chipHeadTeacher">Regente de Inglês</span>
+                <span class="chip" data-i18n="chipAges36">3 a 6 anos</span>
+                <span class="chip" data-i18n="chipBilingualPtEn">Bilíngue PT/EN</span>
+                <span class="chip">CLIL (4Cs) &amp; PBL</span>
+                <span class="chip" data-i18n="chipNursery">Turmas iniciais (&lt;3)</span>
+              </div>
+            </summary>
+            <div class="exp-body">
+              <div class="theme-group">
+                <div class="theme-label" data-i18n="cbvTheme1">Planejamento e avaliação</div>
+                <ul class="exp-bullets">
+                  <li data-i18n="cbvPlan1"><strong>Planejamento semanal:</strong> Planos semanais alinhados ao currículo bilíngue, às diretrizes institucionais de língua e avaliação e à BNCC, replanejados a partir de evidências de observação.</li>
+                  <li data-i18n="cbvPlan2"><strong>CLIL (4Cs) e PBL:</strong> Planejamento e execução de projetos interdisciplinares integrando a abordagem CLIL (4Cs: Conteúdo, Comunicação, Cognição e Cultura) e Aprendizagem Baseada em Projetos (PBL) a vivências lúdicas.</li>
+                </ul>
+              </div>
+
+              <div class="theme-group">
+                <div class="theme-label" data-i18n="cbvTheme2">Documentação pedagógica</div>
+                <ul class="exp-bullets">
+                  <li data-i18n="cbvDoc1"><strong>Registros e relatórios:</strong> Diário de Classe, portfólios e relatórios de desenvolvimento entregues nos prazos da coordenação, embasados em observação sistemática e coleta de evidências.</li>
+                </ul>
+              </div>
+
+              <div class="theme-group">
+                <div class="theme-label" data-i18n="cbvTheme3">Equipe, formação e famílias</div>
+                <ul class="exp-bullets">
+                  <li data-i18n="cbvTeam1"><strong>Orientação de auxiliares:</strong> Mentoria de auxiliares de turma (TAs) na organização da sala, preparo de materiais, intencionalidade linguística e adaptação de atividades.</li>
+                  <li data-i18n="cbvTeamDev"><strong>Formação continuada:</strong> Participação ativa em treinamentos docentes e programas de desenvolvimento profissional com foco em educação bilíngue, planejamento CLIL (4Cs com PBL) e práticas na Educação Infantil.</li>
+                  <li data-i18n="cbvTeam2"><strong>Parceria com famílias:</strong> Reuniões individuais e coletivas com responsáveis sobre o progresso e marcos de desenvolvimento das crianças.</li>
+                </ul>
+              </div>
+
+              <div class="theme-group">
+                <div class="theme-label" data-i18n="cbvTheme4">Segurança e práticas inclusivas</div>
+                <ul class="exp-bullets">
+                  <li data-i18n="cbvSafe1"><strong>Rotinas de cuidado:</strong> Conferência de alergias e dietas especiais, além de acolhimento e entrega segura na entrada e saída a adultos autorizados.</li>
+                  <li data-i18n="cbvSafe2"><strong>Estratégias inclusivas e multissensoriais:</strong> Diferenciação pedagógica para diversos perfis de desenvolvimento por meio de scaffolding, estações de aprendizagem (learning stations), técnicas de prompting, teatro e musicalização.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Escola Doce Criança -->
+        <div class="exp-row" id="exp-doce">
+          <div class="exp-left">
+            <div class="exp-period-text" data-i18n="docePeriod">Fev 2021 – Jun 2022</div>
+            <div class="exp-org-text">Escola Doce Criança</div>
+          </div>
+          <div class="exp-node-col"><span class="exp-dot" aria-hidden="true"></span></div>
+          <details class="exp-details" data-exp-id="doce">
+            <summary class="exp-summary">
+              <div class="summary-top">
+                <h3 class="exp-role-title" data-i18n="doceRole">Professora de Inglês (Contraturno) e Coordenadora de Planejamento – Educação Infantil</h3>
+                <span class="toggle-hint" data-i18n="showDetails">Ver detalhes</span>
+              </div>
+              <p class="exp-headline" data-i18n="doceHeadline">
+                Aulas de inglês lúdicas, comunicativas e hands-on para crianças de 2 a 6 anos (incluindo turma de 2 anos), com projetos, musicalização e rotinas estruturadas em inglês.
+              </p>
+              <div class="context-chips">
+                <span class="chip" data-i18n="chipAfterSchool">Contraturno</span>
+                <span class="chip" data-i18n="chipAges26">2 a 6 anos</span>
+                <span class="chip" data-i18n="chipPlanningCoord">Coordenação de planejamento</span>
+                <span class="chip" data-i18n="chipDailyReports">Relatórios diários</span>
+              </div>
+            </summary>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li data-i18n="doceB1"><strong>Aulas lúdicas e baseadas em projetos:</strong> Planejamento e condução de aulas comunicativas, hands-on e baseadas em projetos para crianças de 2 a 6 anos (incluindo turma de 2 anos), integrando CLIL, musicalização, contação de histórias e rotinas estruturadas em inglês.</li>
+                <li data-i18n="doceB2"><strong>Relatórios diários:</strong> Elaboração de relatórios diários individuais acompanhando a participação, a rotina e o desenvolvimento linguístico de cada criança.</li>
+                <li data-i18n="doceB3"><strong>Coordenação de planejamento:</strong> Estruturação dos planos pedagógicos e sequência curricular até junho de 2022, com treinamento da auxiliar substituta para continuidade das turmas.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <!-- CNA Recife -->
+        <div class="exp-row" id="exp-cna">
+          <div class="exp-left">
+            <div class="exp-period-text" data-i18n="cnaPeriod">Jul 2019 – Ago 2020</div>
+            <div class="exp-org-text">CNA Recife</div>
+          </div>
+          <div class="exp-node-col"><span class="exp-dot" aria-hidden="true"></span></div>
+          <details class="exp-details" data-exp-id="cna">
+            <summary class="exp-summary">
+              <div class="summary-top">
+                <h3 class="exp-role-title" data-i18n="cnaRole">Professora de Inglês</h3>
+                <span class="toggle-hint" data-i18n="showDetails">Ver detalhes</span>
+              </div>
+              <p class="exp-headline" data-i18n="cnaHeadline">
+                Condução de turmas infantis (a partir de 3 anos) e multietárias nos formatos presencial e remoto, integrando CLIL e Aprendizagem Baseada em Projetos (PBL) em aulas comunicativas e lúdicas.
+              </p>
+              <div class="context-chips">
+                <span class="chip" data-i18n="chipAges3Plus">A partir de 3 anos</span>
+                <span class="chip">CLIL &amp; PBL</span>
+                <span class="chip" data-i18n="chipInPersonRemote">Presencial e remoto</span>
+              </div>
+            </summary>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li data-i18n="cnaB1"><strong>Miniprojetos interdisciplinares:</strong> Criação de miniprojetos práticos conectando temas do cotidiano, ciências e artes à comunicação natural em inglês.</li>
+                <li data-i18n="cnaB2"><strong>Eventos e contação de histórias:</strong> Planejamento e condução de eventos culturais, sessões de storytelling e aulas temáticas para estimular a participação e o engajamento das famílias.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <!-- Atuações Docentes Anteriores -->
+        <div class="exp-row" id="exp-earlier">
+          <div class="exp-left">
+            <div class="exp-period-text" data-i18n="earlierPeriod">Out 2018 – Set 2021</div>
+            <div class="exp-org-text" data-i18n="earlierOrg">Atuações Docentes Anteriores</div>
+          </div>
+          <div class="exp-node-col"><span class="exp-dot" aria-hidden="true"></span></div>
+          <details class="exp-details" data-exp-id="earlier">
+            <summary class="exp-summary">
+              <div class="summary-top">
+                <h3 class="exp-role-title" data-i18n="earlierTitle">Experiências em Ensino Fundamental II e Escola de Idiomas</h3>
+                <span class="toggle-hint" data-i18n="showDetails">Ver detalhes</span>
+              </div>
+              <p class="exp-headline" data-i18n="earlierHeadline">
+                Docência em escola regular brasileira (Ensino Fundamental II) e curso de idiomas com metodologias comunicativas e recursos digitais.
+              </p>
+              <div class="context-chips">
+                <span class="chip">Colégio ELO</span>
+                <span class="chip">Speak English</span>
+                <span class="chip" data-i18n="chipHybrid">Modelo híbrido</span>
+              </div>
+            </summary>
+            <div class="exp-body">
+              <div class="earlier-role-block">
+                <div class="earlier-role-head">
+                  <span data-i18n="eloRoleTitle">Professora Substituta de Inglês – Anos Finais (6º ao 9º ano) | Colégio ELO</span>
+                  <span class="earlier-role-period" data-i18n="eloPeriod"> &bull; Abr 2021 – Set 2021</span>
+                </div>
+                <ul class="exp-bullets">
+                  <li data-i18n="eloB1"><strong>Aulas híbridas:</strong> Planejamento e execução de aulas de inglês para turmas do 6º ao 9º ano em escola regular brasileira, atuando simultaneamente em sala de aula e pelo Google Meet.</li>
+                  <li data-i18n="eloB2"><strong>Avaliação e registros:</strong> Elaboração, adaptação e aplicação de provas e projetos avaliativos, report diário à coordenação e relatórios individuais de acompanhamento.</li>
+                  <li data-i18n="eloB3"><strong>Comunicação digital:</strong> Acompanhamento pedagógico e comunicação contínua com os estudantes via Google Classroom e Google Meet.</li>
+                </ul>
+              </div>
+
+              <div class="earlier-role-block">
+                <div class="earlier-role-head">
+                  <span data-i18n="speakRoleTitle">Professora de Inglês | Speak English</span>
+                  <span class="earlier-role-period" data-i18n="speakPeriod"> &bull; Out 2018 – Mar 2020</span>
+                </div>
+                <ul class="exp-bullets">
+                  <li data-i18n="speakB1"><strong>Turmas intermediárias e preparatórias:</strong> Docência em curso de idiomas com foco em turmas de adultos, desde o nível intermediário até preparatório para certificação Cambridge FCE (níveis B1–B2).</li>
+                  <li data-i18n="speakB2"><strong>Recursos interativos:</strong> Aplicação de instrumentos avaliativos e condução de aulas dinâmicas com lousa interativa e jogos pedagógicos.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. COMPETÊNCIAS PRINCIPAIS -->
+    <section id="competencies">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="compTag">Competências Principais</span>
+        <h2 data-i18n="compTitle">Competências Pedagógicas e de Sala de Aula</h2>
+        <p data-i18n="compSubtitle">Estruturadas em planejamento infantil, avaliação, orientação colaborativa e ferramentas educacionais.</p>
+      </div>
+
+      <div class="comp-grid">
+        <article class="comp-card">
+          <h3 data-i18n="comp1Title">Pedagogia da Infância</h3>
+          <div class="tag-list">
+            <span class="tag" data-i18n="tPlayBased">Aprendizagem Lúdica</span>
+            <span class="tag" data-i18n="tInquiryLed">Aprendizagem Investigativa</span>
+            <span class="tag">CLIL (4Cs)</span>
+            <span class="tag" data-i18n="tPbl">Aprendizagem Baseada em Projetos (PBL)</span>
+            <span class="tag" data-i18n="tIntentionalBilingual">Bilinguismo Intencional</span>
+            <span class="tag" data-i18n="tNurseryEarly">Educação Infantil e Turmas Iniciais</span>
+            <span class="tag">BNCC</span>
+            <span class="tag">Montessori</span>
+            <span class="tag" data-i18n="tSafeguarding">Proteção Infantil (Safeguarding)</span>
+          </div>
+        </article>
+
+        <article class="comp-card">
+          <h3 data-i18n="comp2Title">Avaliação e Documentação</h3>
+          <div class="tag-list">
+            <span class="tag" data-i18n="tObs">Observação Sistemática</span>
+            <span class="tag" data-i18n="tFormative">Avaliação Formativa</span>
+            <span class="tag" data-i18n="tPortfolio">Portfólio</span>
+            <span class="tag" data-i18n="tJournal">Diário de Classe</span>
+            <span class="tag" data-i18n="tReports">Relatórios Diários e Semestrais</span>
+            <span class="tag" data-i18n="tEvidence">Coleta de Evidências</span>
+          </div>
+        </article>
+
+        <article class="comp-card">
+          <h3 data-i18n="comp3Title">Liderança e Colaboração</h3>
+          <div class="tag-list">
+            <span class="tag" data-i18n="tHeadEn">Regência em Inglês</span>
+            <span class="tag" data-i18n="tTaGuide">Orientação de Auxiliares (TAs)</span>
+            <span class="tag" data-i18n="tMeetings">Reuniões com Famílias</span>
+            <span class="tag" data-i18n="tInterpersonal">Relacionamento Interpessoal</span>
+          </div>
+        </article>
+
+        <article class="comp-card">
+          <h3 data-i18n="comp4Title">Pensamento Digital e Inclusão</h3>
+          <div class="tag-list">
+            <span class="tag">Toddle</span>
+            <span class="tag">PowerSchool</span>
+            <span class="tag">ClassApp</span>
+            <span class="tag">Google for Education</span>
+            <span class="tag" data-i18n="tDigitalThinking">Pensamento Digital</span>
+            <span class="tag" data-i18n="tScaffolding">Scaffolding &amp; Learning Stations</span>
+            <span class="tag" data-i18n="tDiff">Ensino Diferenciado</span>
+            <span class="tag" data-i18n="tCreativity">Criatividade</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. FORMAÇÃO E CREDENCIAIS -->
+    <section id="credentials">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="credTag">Formação e Credenciais</span>
+        <h2 data-i18n="credTitle">Formação Acadêmica, Certificações e Idiomas</h2>
+      </div>
+
+      <div class="two-col">
+        <div class="info-panel">
+          <h3 data-i18n="eduHeading">Formação Acadêmica</h3>
+          <div class="edu-item">
+            <div class="edu-degree" data-i18n="edu1Degree">Pós-graduação (Especialização) em Educação Bilíngue e Plurilíngue</div>
+            <div class="edu-school">Universidade Federal de Pernambuco (UFPE) &bull; 2022 – 2024</div>
+            <div class="edu-note" data-i18n="edu1Note">TCC: Bilinguismo e Autismo na Infância</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-degree" data-i18n="edu2Degree">Licenciatura em Pedagogia</div>
+            <div class="edu-school">UNIASSELVI &bull; 2020 – 2021</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-degree" data-i18n="edu3Degree">Tecnologia em Ciência de Dados</div>
+            <div class="edu-school" data-i18n="edu3School">Universidade Federal de Mato Grosso do Sul (UFMS) &bull; Previsão: 2028</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-degree" data-i18n="edu4Degree">Bacharelado em Engenharia Química</div>
+            <div class="edu-school">Universidade Federal de Pernambuco (UFPE) &bull; 2012 – 2018</div>
+          </div>
+        </div>
+
+        <div class="info-panel">
+          <h3 data-i18n="certHeading">Certificações, Idiomas e Formação Complementar</h3>
+          <ul class="cred-list">
+            <li>
+              <span class="cred-badge" data-i18n="badgeCerts">Certificações</span>
+              <span data-i18n="certVal">CELTA (Certificate in Teaching English to Speakers of Other Languages – Cambridge) &bull; C2 Proficiency – CPE (Cambridge)</span>
+            </li>
+            <li>
+              <span class="cred-badge" data-i18n="badgeLangs">Idiomas</span>
+              <span data-i18n="langVal">Português (Nativo) &bull; Inglês (C2 / Fluência quase nativa) &bull; Espanhol (Proficiência limitada)</span>
+            </li>
+            <li>
+              <span class="cred-badge" data-i18n="badgeTrain">Formação</span>
+              <span data-i18n="trainVal">III Jornada Luna ABA: Análise do Comportamento Aplicada (ABA), Teoria das Molduras Relacionais (RFT) e práticas baseadas em evidências no desenvolvimento infantil. Clube da Luna: formação em neurodiversidade.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CONTATO -->
+    <section id="contact" class="contact-section">
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <span class="section-tag" data-i18n="contactTag">Contato</span>
+          <h2 data-i18n="contactTitle">Vamos conversar sobre Educação Infantil e Educação Bilíngue</h2>
+          <p data-i18n="contactBody">
+            Se você está recrutando para vagas de Professora Regente de Inglês ou docência bilíngue na Educação Infantil em São Paulo e gostaria de conversar sobre rotinas de sala, planejamento ou agendar uma entrevista, entre em contato pelo WhatsApp ou pelo formulário ao lado.
+          </p>
+
+          <div class="quick-channels">
+            <button type="button" class="btn-whatsapp" id="directWhatsAppBtn" data-i18n="waDirectBtn">
+              Conversar no WhatsApp
+            </button>
+
+            <div class="direct-meta">
+              <div><strong>E-mail:</strong> <a href="mailto:zelia.mlbleite@gmail.com">zelia.mlbleite@gmail.com</a></div>
+              <div id="phoneRow">
+                <strong data-i18n="phoneLabel">Telefone / WhatsApp:</strong>
+                <span id="phoneDisplay" class="phone-placeholder">[Clique para exibir]</span>
+                <button type="button" class="btn-reveal-phone" id="revealPhoneBtn">Mostrar número</button>
+              </div>
+              <div><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/zleite" target="_blank" rel="noopener">linkedin.com/in/zleite</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3 data-i18n="formTitle">Enviar Mensagem Direta</h3>
+          <p class="form-sub" data-i18n="formSub">Preencha os campos abaixo para abrir um e-mail ou mensagem no WhatsApp já formatados em nova aba.</p>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="senderName" data-i18n="lblName">Seu Nome *</label>
+                <input type="text" id="senderName" name="senderName" data-i18n-placeholder="phName" placeholder="Ex.: Mariana Silva" required />
+              </div>
+              <div class="form-group">
+                <label for="senderOrg" data-i18n="lblOrg">Escola / Instituição *</label>
+                <input type="text" id="senderOrg" name="senderOrg" data-i18n-placeholder="phOrg" placeholder="Ex.: Escola Bilíngue SP" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="senderEmail" data-i18n="lblEmail">Seu E-mail *</label>
+                <input type="email" id="senderEmail" name="senderEmail" data-i18n-placeholder="phEmail" placeholder="nome@escola.com.br" required />
+              </div>
+              <div class="form-group">
+                <label for="inquiryTopic" data-i18n="lblTopic">Assunto</label>
+                <select id="inquiryTopic" name="inquiryTopic">
+                  <option value="role" data-i18n="optRole">Vaga de Educação Infantil / Bilíngue</option>
+                  <option value="interview" data-i18n="optInterview">Convite para Entrevista</option>
+                  <option value="curriculum" data-i18n="optCurriculum">Currículo e Educação Infantil</option>
+                  <option value="other" data-i18n="optOther">Outro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage" data-i18n="lblMessage">Mensagem *</label>
+              <textarea id="senderMessage" name="senderMessage" rows="3" data-i18n-placeholder="phMessage" placeholder="Compartilhe detalhes sobre a vaga, faixa etária ou horários..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-submit" data-i18n="btnEmail">Enviar por E-mail</button>
+              <button type="button" id="sendWhatsAppBtn" class="btn-submit-wa" data-i18n="btnWa">Enviar via WhatsApp</button>
+            </div>
+            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button type="button" class="wa-float" id="floatWhatsAppBtn" data-i18n-aria="waFloatAria" aria-label="Conversar no WhatsApp">
+    WhatsApp
+  </button>
+
+  <script>
+    let phoneRevealed = false;
+
+    function getDecodedDigits() {
+      const codes = [53,53,56,49,57,57,56,52,57,55,56,57,53];
+      return String.fromCharCode.apply(null, codes);
+    }
+
+    function getFormattedPhone() {
+      const d = getDecodedDigits();
+      return `+${d.slice(0,2)} (${d.slice(2,4)}) ${d.slice(4,9)}-${d.slice(9)}`;
+    }
+
+    function openWhatsAppChat(customMessage) {
+      const digits = getDecodedDigits();
+      const url = `https://wa.me/${digits}?text=${encodeURIComponent(customMessage)}`;
+      window.open(url, "_blank", "noopener");
+    }
+
+    const DICT = {
+      pt: {
+        pageTitle: "Zélia Leite — Educadora Bilíngue de Educação Infantil",
+        metaDesc: "Zélia Leite — Educadora Bilíngue de Educação Infantil com 8+ anos de experiência docente, Cambridge C2, CELTA, Pedagogia e Pós-graduação em Educação Bilíngue.",
+        navExperience: "Experiência",
+        navCompetencies: "Competências",
+        navCredentials: "Formação e Certificações",
+        navContact: "Contato",
+        downloadPdf: "Baixar PDF",
+        eyebrow: "Educação Infantil • Educação Bilíngue • Pedagogia",
+        heroSubtitle: "Educadora Bilíngue – Educação Infantil • Pedagoga e Especialista em Educação Bilíngue",
+        heroSummary: "Educadora Bilíngue de Educação Infantil (Cambridge C2, CELTA) com Licenciatura em Pedagogia, Pós-graduação em Educação Bilíngue e Plurilíngue e 8 anos de experiência docente, incluindo 3 anos como Professora Regente de Inglês na Educação Infantil bilíngue. Experiência em planejamento lúdico e investigativo (CLIL e PBL), observação sistemática e documentação pedagógica (Portfólio, Diário de Classe e relatórios de desenvolvimento), orientação de auxiliares de turma (TAs), comunicação com famílias e estratégias inclusivas.",
+        heroCtaPrimary: "Ver Experiência",
+        heroCtaSecondary: "Entrar em Contato",
+        snapshotTitle: "Resumo do Perfil",
+        stat1Num: "8+ anos",
+        stat1Label: "Experiência docente (desde 2018)",
+        stat2Num: "3 anos",
+        stat2Label: "Regente de Inglês na Educação Infantil bilíngue",
+        stat3Num: "3–6 anos",
+        stat3Label: "Faixa etária principal (também turmas de 2 anos)",
+        stat4Num: "PT · EN C2",
+        stat4Label: "Português nativo e Inglês Cambridge C2",
+        locLabel: "Localização:",
+        locValue: "São Paulo, SP, Brasil",
+        expTag: "Experiência Profissional",
+        expTitle: "Trajetória em Sala de Aula e Prática Pedagógica",
+        expSubtitle: "Oito anos de experiência docente em escolas bilíngues, internacionais, contraturno e cursos de idiomas.",
+        visualTitle: "Fluxo de Rotina e Documentação na Educação Infantil",
+        visualDesc: "Planejamento semanal → Brincadeira e investigação com TAs → Observação sistemática, portfólios e parceria com famílias.",
+        timelineBarLabel: "Linha do tempo (2018 → Presente)",
+        expandAll: "Expandir tudo",
+        collapseAll: "Recolher tudo",
+        showDetails: "Ver detalhes",
+        hideDetails: "Ocultar detalhes",
+        gradedPeriod: "Jan 2025 – Presente",
+        gradedRole: "Professora Substituta – Educação Infantil e Ensino Fundamental",
+        gradedHeadline: "Atuação em turmas de Educação Infantil e Pré-escola em ambiente escolar internacional totalmente em inglês.",
+        chipSub: "Substituta",
+        chipEarlyPreK: "Educação Infantil e Pré-escola",
+        gradedB1: "Protocolos e diretrizes: Cobertura de turmas de Educação Infantil e Pré-escola em ambiente totalmente em inglês, seguindo rigorosamente os protocolos de segurança da escola e as diretrizes pedagógicas inspiradas no IB e Montessori.",
+        gradedB2: "Observação e adaptação: Acompanhamento dinâmico do desenvolvimento infantil, promovendo um ambiente seguro e adaptando-se rapidamente a diferentes rotinas e perfis individuais dos alunos.",
+        gradedB3: "Comunicação com a equipe: Comunicação clara e profissional com os professores titulares e a coordenação para manter a consistência no acompanhamento comportamental.",
+        cbvPeriod: "Jul 2021 – Ago 2024",
+        cbvRole: "Professora Bilíngue (Regente de Inglês)",
+        cbvHeadline: "Regência do componente de inglês por 3 anos em programa bilíngue português–inglês da Educação Infantil (3 a 6 anos, incluindo alunos ingressantes antes dos 3 anos).",
+        chipHeadTeacher: "Regente de Inglês",
+        chipAges36: "3 a 6 anos",
+        chipBilingualPtEn: "Bilíngue PT/EN",
+        chipNursery: "Turmas iniciais (<3)",
+        cbvTheme1: "Planejamento e avaliação",
+        cbvPlan1: "Planejamento semanal: Planos semanais alinhados ao currículo bilíngue, às diretrizes institucionais de língua e avaliação e à BNCC, replanejados a partir de evidências de observação.",
+        cbvPlan2: "CLIL (4Cs) e PBL: Planejamento e execução de projetos interdisciplinares integrando a abordagem CLIL (4Cs: Conteúdo, Comunicação, Cognição e Cultura) e Aprendizagem Baseada em Projetos (PBL) a vivências lúdicas.",
+        cbvTheme2: "Documentação pedagógica",
+        cbvDoc1: "Registros e relatórios: Diário de Classe, portfólios e relatórios de desenvolvimento entregues nos prazos da coordenação, embasados em observação sistemática e coleta de evidências.",
+        cbvTheme3: "Equipe, formação e famílias",
+        cbvTeam1: "Orientação de auxiliares: Mentoria de auxiliares de turma (TAs) na organização da sala, preparo de materiais, intencionalidade linguística e adaptação de atividades.",
+        cbvTeamDev: "Formação continuada: Participação ativa em treinamentos docentes e programas de desenvolvimento profissional com foco em educação bilíngue, planejamento CLIL (4Cs com PBL) e práticas na Educação Infantil.",
+        cbvTeam2: "Parceria com famílias: Reuniões individuais e coletivas com responsáveis sobre o progresso e marcos de desenvolvimento das crianças.",
+        cbvTheme4: "Segurança e práticas inclusivas",
+        cbvSafe1: "Rotinas de cuidado: Conferência de alergias e dietas especiais, além de acolhimento e entrega segura na entrada e saída a adultos autorizados.",
+        cbvSafe2: "Estratégias inclusivas e multissensoriais: Diferenciação pedagógica para diversos perfis de desenvolvimento por meio de scaffolding, estações de aprendizagem (learning stations), técnicas de prompting, teatro e musicalização.",
+        docePeriod: "Fev 2021 – Jun 2022",
+        doceRole: "Professora de Inglês (Contraturno) e Coordenadora de Planejamento – Educação Infantil",
+        doceHeadline: "Aulas de inglês lúdicas, comunicativas e hands-on para crianças de 2 a 6 anos (incluindo turma de 2 anos), com projetos, musicalização e rotinas estruturadas em inglês.",
+        chipAfterSchool: "Contraturno",
+        chipAges26: "2 a 6 anos",
+        chipPlanningCoord: "Coordenação de planejamento",
+        chipDailyReports: "Relatórios diários",
+        doceB1: "Aulas lúdicas e baseadas em projetos: Planejamento e condução de aulas comunicativas, hands-on e baseadas em projetos para crianças de 2 a 6 anos (incluindo turma de 2 anos), integrando CLIL, musicalização, contação de histórias e rotinas estruturadas em inglês.",
+        doceB2: "Relatórios diários: Elaboração de relatórios diários individuais acompanhando a participação, a rotina e o desenvolvimento linguístico de cada criança.",
+        doceB3: "Coordenação de planejamento: Estruturação dos planos pedagógicos e sequência curricular até junho de 2022, com treinamento da auxiliar substituta para continuidade das turmas.",
+        cnaPeriod: "Jul 2019 – Ago 2020",
+        cnaRole: "Professora de Inglês",
+        cnaHeadline: "Condução de turmas infantis (a partir de 3 anos) e multietárias nos formatos presencial e remoto, integrando CLIL e Aprendizagem Baseada em Projetos (PBL) em aulas comunicativas e lúdicas.",
+        chipAges3Plus: "A partir de 3 anos",
+        chipInPersonRemote: "Presencial e remoto",
+        cnaB1: "Miniprojetos interdisciplinares: Criação de miniprojetos práticos conectando temas do cotidiano, ciências e artes à comunicação natural em inglês.",
+        cnaB2: "Eventos e contação de histórias: Planejamento e condução de eventos culturais, sessões de storytelling e aulas temáticas para estimular a participação e o engajamento das famílias.",
+        earlierPeriod: "Out 2018 – Set 2021",
+        earlierOrg: "Atuações Docentes Anteriores",
+        earlierTitle: "Experiências em Ensino Fundamental II e Escola de Idiomas",
+        earlierHeadline: "Docência em escola regular brasileira (Ensino Fundamental II) e curso de idiomas com metodologias comunicativas e recursos digitais.",
+        chipHybrid: "Modelo híbrido",
+        eloRoleTitle: "Professora Substituta de Inglês – Anos Finais (6º ao 9º ano) | Colégio ELO",
+        eloPeriod: " • Abr 2021 – Set 2021",
+        eloB1: "Aulas híbridas: Planejamento e execução de aulas de inglês para turmas do 6º ao 9º ano em escola regular brasileira, atuando simultaneamente em sala de aula e pelo Google Meet.",
+        eloB2: "Avaliação e registros: Elaboração, adaptação e aplicação de provas e projetos avaliativos, report diário à coordenação e relatórios individuais de acompanhamento.",
+        eloB3: "Comunicação digital: Acompanhamento pedagógico e comunicação contínua com os estudantes via Google Classroom e Google Meet.",
+        speakRoleTitle: "Professora de Inglês | Speak English",
+        speakPeriod: " • Out 2018 – Mar 2020",
+        speakB1: "Turmas intermediárias e preparatórias: Docência em curso de idiomas com foco em turmas de adultos, desde o nível intermediário até preparatório para certificação Cambridge FCE (níveis B1–B2).",
+        speakB2: "Recursos interativos: Aplicação de instrumentos avaliativos e condução de aulas dinâmicas com lousa interativa e jogos pedagógicos.",
+        compTag: "Competências Principais",
+        compTitle: "Competências Pedagógicas e de Sala de Aula",
+        compSubtitle: "Estruturadas em planejamento infantil, avaliação, orientação colaborativa e ferramentas educacionais.",
+        comp1Title: "Pedagogia da Infância",
+        tPlayBased: "Aprendizagem Lúdica",
+        tInquiryLed: "Aprendizagem Investigativa",
+        tPbl: "Aprendizagem Baseada em Projetos (PBL)",
+        tIntentionalBilingual: "Bilinguismo Intencional",
+        tNurseryEarly: "Educação Infantil e Turmas Iniciais",
+        tSafeguarding: "Proteção Infantil (Safeguarding)",
+        comp2Title: "Avaliação e Documentação",
+        tObs: "Observação Sistemática",
+        tFormative: "Avaliação Formativa",
+        tPortfolio: "Portfólio",
+        tJournal: "Diário de Classe",
+        tReports: "Relatórios Diários e Semestrais",
+        tEvidence: "Coleta de Evidências",
+        comp3Title: "Liderança e Colaboração",
+        tHeadEn: "Regência em Inglês",
+        tTaGuide: "Orientação de Auxiliares (TAs)",
+        tMeetings: "Reuniões com Famílias",
+        tInterpersonal: "Relacionamento Interpessoal",
+        comp4Title: "Pensamento Digital e Inclusão",
+        tDigitalThinking: "Pensamento Digital",
+        tScaffolding: "Scaffolding & Learning Stations",
+        tDiff: "Ensino Diferenciado",
+        tCreativity: "Criatividade",
+        credTag: "Formação e Credenciais",
+        credTitle: "Formação Acadêmica, Certificações e Idiomas",
+        eduHeading: "Formação Acadêmica",
+        edu1Degree: "Pós-graduação (Especialização) em Educação Bilíngue e Plurilíngue",
+        edu1Note: "TCC: Bilinguismo e Autismo na Infância",
+        edu2Degree: "Licenciatura em Pedagogia",
+        edu3Degree: "Tecnologia em Ciência de Dados",
+        edu3School: "Universidade Federal de Mato Grosso do Sul (UFMS) • Previsão: 2028",
+        edu4Degree: "Bacharelado em Engenharia Química",
+        certHeading: "Certificações, Idiomas e Formação Complementar",
+        badgeCerts: "Certificações",
+        certVal: "CELTA (Certificate in Teaching English to Speakers of Other Languages – Cambridge) • C2 Proficiency – CPE (Cambridge)",
+        badgeLangs: "Idiomas",
+        langVal: "Português (Nativo) • Inglês (C2 / Fluência quase nativa) • Espanhol (Proficiência limitada)",
+        badgeTrain: "Formação",
+        trainVal: "III Jornada Luna ABA: Análise do Comportamento Aplicada (ABA), Teoria das Molduras Relacionais (RFT) e práticas baseadas em evidências no desenvolvimento infantil. Clube da Luna: formação em neurodiversidade.",
+        contactTag: "Contato",
+        contactTitle: "Vamos conversar sobre Educação Infantil e Educação Bilíngue",
+        contactBody: "Se você está recrutando para vagas de Professora Regente de Inglês ou docência bilíngue na Educação Infantil em São Paulo e gostaria de conversar sobre rotinas de sala, planejamento ou agendar uma entrevista, entre em contato pelo WhatsApp ou pelo formulário ao lado.",
+        waDirectBtn: "Conversar no WhatsApp",
+        waPrefill: "Olá Zélia! Vi seu currículo online e gostaria de conversar.",
+        phoneLabel: "Telefone / WhatsApp:",
+        phoneHidden: "[Clique para exibir]",
+        showPhoneBtn: "Mostrar número",
+        formTitle: "Enviar Mensagem Direta",
+        formSub: "Preencha os campos abaixo para abrir um e-mail ou mensagem no WhatsApp já formatados em nova aba.",
+        lblName: "Seu Nome *",
+        phName: "Ex.: Mariana Silva",
+        lblOrg: "Escola / Instituição *",
+        phOrg: "Ex.: Escola Bilíngue SP",
+        lblEmail: "Seu E-mail *",
+        phEmail: "nome@escola.com.br",
+        lblTopic: "Assunto",
+        optRole: "Vaga de Educação Infantil / Bilíngue",
+        optInterview: "Convite para Entrevista",
+        optCurriculum: "Currículo e Educação Infantil",
+        optOther: "Outro",
+        lblMessage: "Mensagem *",
+        phMessage: "Compartilhe detalhes sobre a vaga, faixa etária ou horários...",
+        btnEmail: "Enviar por E-mail",
+        btnWa: "Enviar via WhatsApp",
+        waFloatAria: "Conversar no WhatsApp",
+        statusEmail: "Abrindo seu cliente de e-mail em nova aba com a mensagem preenchida.",
+        statusWaMissing: "Preencha seu nome e mensagem antes de abrir o WhatsApp.",
+        statusWaOk: "Abrindo o WhatsApp em nova aba com a mensagem pronta."
+      },
+      en: {
+        pageTitle: "Zélia Leite — Bilingual Early Years Educator",
+        metaDesc: "Zélia Leite — Bilingual Early Years educator with 8+ years of teaching experience, Cambridge C2, CELTA, Pedagogy degree, and Bilingual Education specialization.",
+        navExperience: "Experience",
+        navCompetencies: "Competencies",
+        navCredentials: "Education & Certs",
+        navContact: "Get in Touch",
+        downloadPdf: "Download PDF",
+        eyebrow: "Early Years • Bilingual Education • Pedagogy",
+        heroSubtitle: "Bilingual Early Years Educator • Pedagogy & Bilingual Education Specialist",
+        heroSummary: "Bilingual Early Years educator (Cambridge C2, CELTA) with a degree in Pedagogy, a postgraduate specialization in Bilingual and Plurilingual Education, and 8 years of teaching experience, including 3 as Head English Teacher in a bilingual early childhood program. Experienced in play-based, inquiry-led planning (CLIL and PBL), systematic observation and documentation (portfolios, Class Journal, report cards), Teaching Assistant guidance, family communication, and inclusive strategies.",
+        heroCtaPrimary: "Explore Experience",
+        heroCtaSecondary: "Get in Touch",
+        snapshotTitle: "Educator Snapshot",
+        stat1Num: "8+ Yrs",
+        stat1Label: "Teaching experience (since 2018)",
+        stat2Num: "3 Yrs",
+        stat2Label: "Head English Teacher, bilingual early years",
+        stat3Num: "3–6 Yrs",
+        stat3Label: "Main age group (also taught age-2 groups)",
+        stat4Num: "PT · EN C2",
+        stat4Label: "Native Portuguese, Cambridge C2 English",
+        locLabel: "Location:",
+        locValue: "São Paulo, SP, Brazil",
+        expTag: "Professional Experience",
+        expTitle: "Classroom & Pedagogical Trajectory",
+        expSubtitle: "Eight years of teaching experience across bilingual, international, after-school, and language school settings.",
+        visualTitle: "Early Years Routine & Documentation Flow",
+        visualDesc: "Weekly planning → Play & inquiry with TAs → Systematic observation, portfolios & family alignment.",
+        timelineBarLabel: "Timeline (2018 → Today)",
+        expandAll: "Expand all",
+        collapseAll: "Collapse all",
+        showDetails: "Show details",
+        hideDetails: "Hide details",
+        gradedPeriod: "Jan 2025 – Present",
+        gradedRole: "Substitute Teacher – Early Years & Primary",
+        gradedHeadline: "Substitute teaching across Early Years and Pre-K classes in a fully English-speaking international environment.",
+        chipSub: "Substitute",
+        chipEarlyPreK: "Early Years & Pre-K",
+        gradedB1: "Protocols & guidelines: Cover Early Years and Pre-K classes in a fully English-speaking environment, strictly adhering to the school's safety protocols and IB/Montessori-inspired pedagogical guidelines.",
+        gradedB2: "Dynamic observation: Monitor child development dynamically, fostering a safe environment and adapting quickly to diverse routines and specific student profiles.",
+        gradedB3: "Team communication: Ensure clear, professional communication with permanent teaching staff and coordination to maintain consistency in behavioral tracking.",
+        cbvPeriod: "Jul 2021 – Aug 2024",
+        cbvRole: "Bilingual Teacher (Head English Teacher)",
+        cbvHeadline: "Led the English component for 3 years in a Portuguese–English early childhood program (ages 3–6, including students joining before age 3).",
+        chipHeadTeacher: "Head teacher",
+        chipAges36: "Ages 3–6",
+        chipBilingualPtEn: "Bilingual PT/EN",
+        chipNursery: "Nursery (<3)",
+        cbvTheme1: "Planning and assessment",
+        cbvPlan1: "Weekly planning: Weekly plans aligned with the school's bilingual curriculum, institutional language and assessment guidelines, and the BNCC; re-planned from observation evidence.",
+        cbvPlan2: "CLIL (4Cs) & PBL: Designed and delivered interdisciplinary projects integrating the CLIL 4Cs framework (Content, Communication, Cognition, Culture) and Project-Based Learning (PBL) with play-based learning.",
+        cbvTheme2: "Documentation",
+        cbvDoc1: "Pedagogical records: Class Journal, portfolios, and report cards delivered within coordination deadlines, based on systematic observation and evidence collection.",
+        cbvTheme3: "Team, training and families",
+        cbvTeam1: "TA mentorship: Guided Teaching Assistants on classroom organization, material preparation, linguistic intentionality, and activity adaptation.",
+        cbvTeamDev: "Teacher training & development: Active participation in ongoing teacher training and professional development focused on bilingual education, CLIL (4Cs with PBL) planning, and early childhood best practices.",
+        cbvTeam2: "Family partnership: Individual and group family meetings on progress and developmental milestones.",
+        cbvTheme4: "Safety and inclusive practice",
+        cbvSafe1: "Care routines: Allergy and special-diet checks; entrance and exit handovers to authorized adults.",
+        cbvSafe2: "Inclusive & multisensory strategies: Differentiated instruction for diverse developmental profiles using scaffolding, learning stations, prompting techniques, drama, and music.",
+        docePeriod: "Feb 2021 – Jun 2022",
+        doceRole: "After-School English Teacher & Planning Coordinator – Early Childhood",
+        doceHeadline: "Delivered play-based, communicative, and hands-on English classes for children aged 2 to 6 (including a 2-year-old group), integrating projects, music, and structured routines in English.",
+        chipAfterSchool: "After-school",
+        chipAges26: "Ages 2–6",
+        chipPlanningCoord: "Planning coordinator",
+        chipDailyReports: "Daily reports",
+        doceB1: "Play-based & project-led lessons: Planned and taught communicative, hands-on, and project-based English classes for ages 2–6 (including 2-year-olds), integrating CLIL, music, storytelling, movement, and structured routines in English.",
+        doceB2: "Daily progress reports: Wrote daily individual progress reports tracking each child's engagement, routine, and language milestones.",
+        doceB3: "Planning coordination: Served as Planning Coordinator through Jun 2022, structuring pedagogical plans and training the incoming teaching assistant to take over the classroom role.",
+        cnaPeriod: "Jul 2019 – Aug 2020",
+        cnaRole: "English Teacher",
+        cnaHeadline: "Led mixed-age and children's classes (from age 3 upwards) in both in-person and remote formats, integrating CLIL and Project-Based Learning (PBL) into communicative, play-based lessons.",
+        chipAges3Plus: "Ages 3+",
+        chipInPersonRemote: "In-person & remote",
+        cnaB1: "Cross-curricular mini-projects: Designed hands-on mini-projects and cross-curricular activities that connected everyday themes, science, and arts with natural English communication.",
+        cnaB2: "Cultural & storytelling events: Planned and facilitated immersive cultural events, storytelling sessions, and special classes to encourage confident student participation and family engagement.",
+        earlierPeriod: "Oct 2018 – Sep 2021",
+        earlierOrg: "Earlier Teaching Experience",
+        earlierTitle: "Middle School & Language Institute Roles",
+        earlierHeadline: "English instruction across a Brazilian regular school (Grades 6–9) and a language institute using communicative and digital methodologies.",
+        chipHybrid: "Hybrid model",
+        eloRoleTitle: "Substitute Middle School English Teacher (Grades 6–9) | Colégio ELO",
+        eloPeriod: " • Apr 2021 – Sep 2021",
+        eloB1: "Hybrid instruction: Planned and delivered English lessons for Grades 6–9 in a Brazilian regular school, teaching simultaneously in person and via Google Meet.",
+        eloB2: "Assessment & reporting: Designed, adapted, and administered exams and assessment projects, delivering daily reports to coordination and individual student progress reports.",
+        eloB3: "Digital communication: Maintained ongoing academic follow-up and student communication through Google Classroom and Google Meet.",
+        speakRoleTitle: "English Teacher | Speak English",
+        speakPeriod: " • Oct 2018 – Mar 2020",
+        speakB1: "Intermediate & exam prep classes: Taught English primarily to adult learners from intermediate level through Cambridge FCE preparation (B1–B2).",
+        speakB2: "Interactive tools: Administered assessments and led engaging lessons using interactive whiteboards and educational games.",
+        compTag: "Core Competencies",
+        compTitle: "Pedagogical & Classroom Strengths",
+        compSubtitle: "Structured around early childhood planning, assessment, collaborative guidance, and classroom tools.",
+        comp1Title: "Early Childhood Pedagogy",
+        tPlayBased: "Play-Based Learning",
+        tInquiryLed: "Inquiry-Led Learning",
+        tPbl: "Project-Based Learning (PBL)",
+        tIntentionalBilingual: "Intentional Bilingualism",
+        tNurseryEarly: "Nursery & Early Years",
+        tSafeguarding: "Safeguarding",
+        comp2Title: "Assessment & Documentation",
+        tObs: "Systematic Observation",
+        tFormative: "Formative Assessment",
+        tPortfolio: "Portfolio",
+        tJournal: "Class Journal",
+        tReports: "Daily & Term Reports",
+        tEvidence: "Evidence Collection",
+        comp3Title: "Leadership & Collaboration",
+        tHeadEn: "Head English Teacher",
+        tTaGuide: "TA Guidance & Mentorship",
+        tMeetings: "Parent/Guardian Meetings",
+        tInterpersonal: "Interpersonal Relationships",
+        comp4Title: "Digital & Inclusive Thinking",
+        tDigitalThinking: "Digital Thinking",
+        tScaffolding: "Scaffolding & Learning Stations",
+        tDiff: "Differentiated Instruction",
+        tCreativity: "Creativity",
+        credTag: "Academic & Professional Credentials",
+        credTitle: "Education, Certifications & Languages",
+        eduHeading: "Education",
+        edu1Degree: "Postgraduate Specialization in Bilingual and Plurilingual Education",
+        edu1Note: "Thesis: Bilingualism and Autism in Childhood",
+        edu2Degree: "Bachelor's Degree in Pedagogy",
+        edu3Degree: "Technologist Degree in Data Science",
+        edu3School: "Universidade Federal de Mato Grosso do Sul (UFMS) • Expected 2028",
+        edu4Degree: "Bachelor's Degree in Chemical Engineering",
+        certHeading: "Certifications, Languages & Training",
+        badgeCerts: "Certifications",
+        certVal: "CELTA (Certificate in Teaching English to Speakers of Other Languages – Cambridge) • C2 Proficiency – CPE (Cambridge)",
+        badgeLangs: "Languages",
+        langVal: "Portuguese (Native) • English (C2 / Near-Native Proficiency) • Spanish (Limited working proficiency)",
+        badgeTrain: "Training",
+        trainVal: "III Jornada Luna ABA: Applied Behavior Analysis (ABA), Relational Frame Theory (RFT), and evidence-based child development practices. Clube da Luna: neurodiversity training.",
+        contactTag: "Get in Touch",
+        contactTitle: "Let's Talk About Early Years & Bilingual Education",
+        contactBody: "If you are hiring for an Early Years Head Teacher or bilingual teaching role in São Paulo and would like to discuss classroom routines, planning, or a conversation with the team, feel free to reach out via WhatsApp or the form.",
+        waDirectBtn: "Chat on WhatsApp",
+        waPrefill: "Hello Zélia! I visited your online résumé and would like to connect.",
+        phoneLabel: "Phone / WhatsApp:",
+        phoneHidden: "[Click to reveal]",
+        showPhoneBtn: "Show number",
+        formTitle: "Send a Direct Message",
+        formSub: "Complete the fields below to open a pre-formatted email or WhatsApp message in a new tab.",
+        lblName: "Your Name *",
+        phName: "e.g., Mariana Silva",
+        lblOrg: "School / Organization *",
+        phOrg: "e.g., Bilingual School SP",
+        lblEmail: "Your Email *",
+        phEmail: "name@school.com",
+        lblTopic: "Topic",
+        optRole: "Early Years Head / Bilingual Teacher Role",
+        optInterview: "Interview Invitation",
+        optCurriculum: "Curriculum & Early Years Inquiry",
+        optOther: "Other",
+        lblMessage: "Message *",
+        phMessage: "Share a few details about the role, grade level, or schedule...",
+        btnEmail: "Send via Email",
+        btnWa: "Send via WhatsApp",
+        waFloatAria: "Chat on WhatsApp",
+        statusEmail: "Opening your email client in a new tab with your message ready.",
+        statusWaMissing: "Please enter your name and message before opening WhatsApp.",
+        statusWaOk: "Opening WhatsApp in a new tab with your message ready."
+      }
+    };
+
+    const TIMELINE_ITEMS = [
+      { id: "exp-earlier", yearsPt: "Out 2018 – Set 2021", yearsEn: "Oct 2018 – Sep 2021", labelPt: "ELO & Speak", labelEn: "ELO & Speak" },
+      { id: "exp-cna", yearsPt: "Jul 2019 – Ago 2020", yearsEn: "Jul 2019 – Aug 2020", labelPt: "CNA Recife", labelEn: "CNA Recife" },
+      { id: "exp-doce", yearsPt: "Fev 2021 – Jun 2022", yearsEn: "Feb 2021 – Jun 2022", labelPt: "Doce Criança", labelEn: "Doce Criança" },
+      { id: "exp-cbv", yearsPt: "Jul 2021 – Ago 2024", yearsEn: "Jul 2021 – Aug 2024", labelPt: "Colégio CBV", labelEn: "Colégio CBV" },
+      { id: "exp-graded", yearsPt: "Jan 2025 – Presente", yearsEn: "Jan 2025 – Present", labelPt: "Graded SP", labelEn: "Graded SP" }
+    ];
+
+    let currentLang = "pt";
+
+    function detectInitialLanguage() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const qLang = (params.get("lang") || "").toLowerCase();
+        if (qLang === "pt" || qLang === "en") return qLang;
+      } catch (_) {}
+
+      try {
+        const saved = localStorage.getItem("zelia_resume_lang");
+        if (saved === "pt" || saved === "en") return saved;
+      } catch (_) {}
+
+      return "pt";
+    }
+
+    function persistLanguage(lang) {
+      try {
+        localStorage.setItem("zelia_resume_lang", lang);
+      } catch (_) {}
+    }
+
+    function updatePhoneDisplay() {
+      const phoneDisplay = document.getElementById("phoneDisplay");
+      const revealPhoneBtn = document.getElementById("revealPhoneBtn");
+      if (!phoneDisplay || !revealPhoneBtn) return;
+
+      if (phoneRevealed) {
+        const formatted = getFormattedPhone();
+        const digits = getDecodedDigits();
+        phoneDisplay.innerHTML = `<a href="tel:+${digits}">${formatted}</a>`;
+        phoneDisplay.classList.remove("phone-placeholder");
+        revealPhoneBtn.style.display = "none";
+      } else {
+        phoneDisplay.textContent = DICT[currentLang].phoneHidden;
+        phoneDisplay.classList.add("phone-placeholder");
+        revealPhoneBtn.textContent = DICT[currentLang].showPhoneBtn;
+        revealPhoneBtn.style.display = "inline-block";
+      }
+    }
+
+    function syncDetailsLabels() {
+      const dict = DICT[currentLang];
+      document.querySelectorAll("details.exp-details").forEach((det) => {
+        const hint = det.querySelector(".toggle-hint");
+        if (hint) {
+          hint.textContent = det.open ? dict.hideDetails : dict.showDetails;
+        }
+      });
+
+      const allDetails = Array.from(document.querySelectorAll("details.exp-details"));
+      const allOpen = allDetails.length > 0 && allDetails.every((d) => d.open);
+      const toggleAllBtn = document.getElementById("toggleAllBtn");
+      if (toggleAllBtn) {
+        toggleAllBtn.textContent = allOpen ? dict.collapseAll : dict.expandAll;
+      }
+    }
+
+    function renderTimelineBar() {
+      const wrap = document.getElementById("miniTimelineWrap");
+      const bar = document.getElementById("timelineBar");
+      if (!wrap || !bar) return;
+      wrap.style.display = "block";
+      bar.innerHTML = "";
+
+      TIMELINE_ITEMS.forEach((item) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "timeline-seg";
+        const yrs = currentLang === "pt" ? item.yearsPt : item.yearsEn;
+        const lbl = currentLang === "pt" ? item.labelPt : item.labelEn;
+        btn.innerHTML = `<span class="seg-years">${yrs}</span><span class="seg-name">${lbl}</span>`;
+        btn.addEventListener("click", () => {
+          const targetRow = document.getElementById(item.id);
+          if (targetRow) {
+            const det = targetRow.querySelector("details.exp-details");
+            if (det) {
+              det.open = true;
+              syncDetailsLabels();
+            }
+            targetRow.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+        bar.appendChild(btn);
+      });
+    }
+
+    function applyLanguage(lang) {
+      currentLang = lang === "en" ? "en" : "pt";
+      const dict = DICT[currentLang];
+      document.documentElement.lang = currentLang === "pt" ? "pt-BR" : "en";
+      document.title = dict.pageTitle;
+
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute("content", dict.metaDesc);
+
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key] !== undefined) {
+          el.textContent = dict[key];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        if (dict[key] !== undefined) {
+          el.setAttribute("placeholder", dict[key]);
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+        const key = el.getAttribute("data-i18n-aria");
+        if (dict[key] !== undefined) {
+          el.setAttribute("aria-label", dict[key]);
+        }
+      });
+
+      document.getElementById("btnPt").classList.toggle("active", currentLang === "pt");
+      document.getElementById("btnEn").classList.toggle("active", currentLang === "en");
+
+      persistLanguage(currentLang);
+      updatePhoneDisplay();
+      renderTimelineBar();
+      syncDetailsLabels();
+    }
+
+    // Direct WhatsApp buttons
+    document.getElementById("directWhatsAppBtn").addEventListener("click", () => {
+      openWhatsAppChat(DICT[currentLang].waPrefill);
+    });
+
+    document.getElementById("floatWhatsAppBtn").addEventListener("click", () => {
+      openWhatsAppChat(DICT[currentLang].waPrefill);
+    });
+
+    // Reveal phone number via button or placeholder click (works in both PT and EN)
+    const revealPhoneBtn = document.getElementById("revealPhoneBtn");
+    const phoneDisplay = document.getElementById("phoneDisplay");
+    if (revealPhoneBtn) {
+      revealPhoneBtn.addEventListener("click", () => {
+        phoneRevealed = true;
+        updatePhoneDisplay();
+      });
+    }
+    if (phoneDisplay) {
+      phoneDisplay.addEventListener("click", () => {
+        if (!phoneRevealed) {
+          phoneRevealed = true;
+          updatePhoneDisplay();
+        }
+      });
+    }
+
+    // PDF print button + auto-expand all details for printing
+    let prePrintStates = [];
+    window.addEventListener("beforeprint", () => {
+      const allDetails = Array.from(document.querySelectorAll("details.exp-details"));
+      prePrintStates = allDetails.map((d) => d.open);
+      allDetails.forEach((d) => { d.open = true; });
+    });
+
+    window.addEventListener("afterprint", () => {
+      const allDetails = Array.from(document.querySelectorAll("details.exp-details"));
+      allDetails.forEach((d, idx) => {
+        if (prePrintStates[idx] !== undefined) d.open = prePrintStates[idx];
+      });
+      syncDetailsLabels();
+    });
+
+    const downloadPdfBtn = document.getElementById("downloadPdfBtn");
+    if (downloadPdfBtn) {
+      downloadPdfBtn.addEventListener("click", () => {
+        window.print();
+      });
+    }
+
+    // Expand / Collapse all details
+    const toggleAllBtn = document.getElementById("toggleAllBtn");
+    if (toggleAllBtn) {
+      toggleAllBtn.addEventListener("click", () => {
+        const allDetails = Array.from(document.querySelectorAll("details.exp-details"));
+        const anyClosed = allDetails.some((d) => !d.open);
+        allDetails.forEach((d) => {
+          d.open = anyClosed;
+        });
+        syncDetailsLabels();
+      });
+    }
+
+    document.querySelectorAll("details.exp-details").forEach((det) => {
+      det.addEventListener("toggle", syncDetailsLabels);
+    });
+
+    // Contact form: mailto & WhatsApp in active language
+    const contactForm = document.getElementById("contactForm");
+    const sendWhatsAppBtn = document.getElementById("sendWhatsAppBtn");
+    const formStatus = document.getElementById("formStatus");
+
+    function getFormValues() {
+      const topicSelect = document.getElementById("inquiryTopic");
+      const selectedOpt = topicSelect.options[topicSelect.selectedIndex];
+      return {
+        name: document.getElementById("senderName").value.trim(),
+        org: document.getElementById("senderOrg").value.trim(),
+        email: document.getElementById("senderEmail").value.trim(),
+        topic: selectedOpt ? selectedOpt.textContent.trim() : "",
+        message: document.getElementById("senderMessage").value.trim()
+      };
+    }
+
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const d = getFormValues();
+      const dict = DICT[currentLang];
+      const subject = currentLang === "pt"
+        ? `[Currículo Online] ${d.topic} — ${d.name} (${d.org})`
+        : `[Online Résumé] ${d.topic} — ${d.name} (${d.org})`;
+
+      const body = currentLang === "pt"
+        ? `Olá Zélia,
+
+Nome: ${d.name}
+Escola / Instituição: ${d.org}
+E-mail: ${d.email}
+Assunto: ${d.topic}
+
+Mensagem:
+${d.message}
+`
+        : `Hello Zélia,
+
+Name: ${d.name}
+School / Organization: ${d.org}
+Email: ${d.email}
+Topic: ${d.topic}
+
+Message:
+${d.message}
+`;
+
+      window.open(
+        `mailto:zelia.mlbleite@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+        "_blank",
+        "noopener"
+      );
+      formStatus.style.display = "block";
+      formStatus.textContent = dict.statusEmail;
+    });
+
+    sendWhatsAppBtn.addEventListener("click", () => {
+      const d = getFormValues();
+      const dict = DICT[currentLang];
+      if (!d.name || !d.message) {
+        formStatus.style.display = "block";
+        formStatus.textContent = dict.statusWaMissing;
+        return;
+      }
+
+      const text = currentLang === "pt"
+        ? `Olá Zélia! Acessei seu currículo online.
+
+*Nome:* ${d.name}
+*Escola/Instituição:* ${d.org || "Não informado"}
+*E-mail:* ${d.email || "Não informado"}
+*Assunto:* ${d.topic}
+
+*Mensagem:* ${d.message}`
+        : `Hello Zélia! I visited your online résumé.
+
+*Name:* ${d.name}
+*School/Organization:* ${d.org || "Not specified"}
+*Email:* ${d.email || "Not specified"}
+*Topic:* ${d.topic}
+
+*Message:* ${d.message}`;
+
+      openWhatsAppChat(text);
+      formStatus.style.display = "block";
+      formStatus.textContent = dict.statusWaOk;
+    });
+
+    document.getElementById("btnPt").addEventListener("click", () => applyLanguage("pt"));
+    document.getElementById("btnEn").addEventListener("click", () => applyLanguage("en"));
+
+    applyLanguage(detectInitialLanguage());
+  </script>
+</body>
+</html>
