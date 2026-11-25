@@ -11,6 +11,58 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Footer & Copyright Notice */
+    .site-footer {
+      max-width: 1120px;
+      margin: 2rem auto 2.5rem;
+      padding: 0 1.25rem;
+    }
+
+    .footer-card {
+      background: #FFFFFF;
+      border: 1.5px solid var(--border);
+      border-top: 4px solid var(--midnight);
+      border-radius: 18px;
+      padding: 1.35rem 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      box-shadow: 0 6px 18px rgba(12, 97, 112, 0.05);
+    }
+
+    .footer-brand {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--midnight-deep);
+      margin-bottom: 0.25rem;
+    }
+
+    .footer-copy {
+      font-size: 0.83rem;
+      color: var(--muted);
+      max-width: 720px;
+      line-height: 1.5;
+    }
+
+    .footer-badge {
+      background: var(--baby-blue);
+      color: var(--midnight-deep);
+      border: 1px solid var(--border);
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    @media print {
+      .site-footer {
+        display: none !important;
+      }
+    }
     :root {
       --midnight: #0C6170;
       --midnight-deep: #07434E;
@@ -1750,6 +1802,19 @@
       </div>
     </section>
   </main>
+  <footer class="site-footer">
+    <div class="footer-card">
+      <div>
+        <div class="footer-brand" data-i18n="footerRights">
+          &copy; 2026 Zélia Leite. Todos os direitos reservados.
+        </div>
+        <p class="footer-copy" data-i18n="footerNotice">
+          O código desta página é disponibilizado exclusivamente para fins de hospedagem e apresentação profissional. Não é concedida licença para cópia, reprodução, modificação ou redistribuição dos textos, dados ou materiais pedagógicos sem autorização prévia e expressa da autora.
+        </p>
+      </div>
+      <span class="footer-badge" data-i18n="footerBadge">All Rights Reserved</span>
+    </div>
+  </footer>
 
   <button type="button" class="wa-float" id="floatWhatsAppBtn" data-i18n-aria="waFloatAria" aria-label="Conversar no WhatsApp">
     WhatsApp
